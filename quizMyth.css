@@ -1,0 +1,185 @@
+* {
+  font-family: "bryant-web", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.question-zone {
+  background-color: #f1f1e9;
+  width: 75%;
+  align-items: center;
+}
+
+/* TITLES ZONE */
+.title,
+.reviewQuestion {
+  color: #2e0927;
+  font-family: "effra", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.1rem;
+  display: block;
+  padding-right: 10px;
+  padding-left: 10px;
+  align-items: center;
+  text-align: center;
+}
+
+#question-title {
+  font-size: 1.3rem;
+  color: #d90000;
+  padding: 10px;
+  border-bottom: 2px solid #2e0927;
+}
+
+/* BUTTON SET UP */
+button {
+  display: block;
+  width: 70%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  margin: auto;
+  margin-top: 10px;
+  background-color: #2e0927;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  color: #f0f0f0;
+}
+
+button:hover {
+  background-color: #d90000;
+}
+
+#detail-button {
+  width: 25%;
+  padding: 10px;
+}
+
+/* BEGIN BUTTON */
+#begin-button {
+  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+  background-color: #d90000;
+}
+
+#begin-button:hover {
+  background-color: #992626;
+}
+
+/* SCORE ZONE */
+
+.score {
+  text-align: center;
+}
+
+/* PROGRESSION BAR SECTION */
+#progression-bar {
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  height: 10px;
+  width: 80%;
+  border: 2px solid #2e0927;
+  border-radius: 5px;
+}
+
+#progression-percentage {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+#filled-bar {
+  background-color: #2e0927;
+  height: 10px;
+  width: 0px;
+}
+
+#detail-button {
+  margin-bottom: 20px;
+}
+
+#reviewWholeQuiz {
+  background-color: #ffffff;
+  border: 2px solid #2e0927;
+}
+
+.reviewAnswer,
+.reviewQuestion,
+.reviewExplanation {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.reviewAnswer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#reviewQuestion1 {
+  padding-top: 30px;
+}
+
+.reviewExplanation {
+  padding: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+  font-style: italic;
+  background-color: #f1f1e9;
+}
+
+#explanation10 {
+  margin-bottom: 20px;
+}
+
+#comment {
+  text-align: center;
+  font-style: italic;
+}
+
+.explanationButton {
+  background: rgba(0, 0, 0, 0);
+  color: #2e0927;
+  text-decoration: underline;
+}
+.explanationButton:hover {
+  background-color: #ffffff;
+}
+
+#cta-button {
+  margin-bottom: 25px;
+}
+
+#cta-headline {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+/* PUT CSS FOR DETAIL BUTTON, TOTALSCORE ETC */
+
+/* PUT COMPUTER BREAKPOINT */
+@media (min-width: 900px) {
+  button {
+    width: 40%;
+  }
+
+  .title,
+  .reviewQuestion {
+    font-size: 1.2rem;
+  }
+
+  #progression-bar {
+    width: 50%;
+  }
+}
