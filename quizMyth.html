@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.typekit.net/dxn7ter.css" />
+    <link rel="stylesheet" href="quizMyth.css" />
+    <title>Nutrition Myth Buster Quiz</title>
+  </head>
+  <body>
+    <section class="upper-zone">
+      <div class="indications">
+        <h2 class="title" id="question-title">
+          Parmi les 10 questions se cachent 5 mythes nutrition. Sauras-tu les
+          reconnaître ?
+        </h2>
+      </div>
+    </section>
+    <section class="question-zone">
+      <button id="begin-button">COMMENCER</button>
+      <div class="question">
+        <h3 class="title" id="question-quiz"></h3>
+        <!-- ALL ANSWERS BUTTONS-->
+        <button class="answers" id="possibility1"></button>
+        <button class="answers" id="possibility2"></button>
+        <button class="answers" id="possibility3"></button>
+        <button class="answers" id="possibility4"></button>
+      </div>
+      <div class="score">
+        <h4 class="score" id="totalScore"></h4>
+        <h5 class="score" id="mythScore"></h5>
+        <h4 class="score" id="comment"></h4>
+      </div>
+      <button id="detail-button" onclick="detailButtonText(this)">
+        Détail
+      </button>
+      <div id="reviewWholeQuiz">
+        <div class="correctedAnswer" id="question1">
+          <div class="reviewQuestion" id="reviewQuestion1"></div>
+          <div class="reviewAnswer" id="reviewAnswer1"></div>
+          <button
+            class="explanationButton"
+            id="explanationButton1"
+            onclick="switchTextExplanationButton(this)"
+          >
+            Détail
+          </button>
+          <div class="reviewExplanation" id="explanation1">
+            Manger des glucides avant de dormir n’est pas nécessairement lié à
+            une prise de poids, et peut même avoir des effets positifs selon le
+            contexte calorique total. (référence: PMID: 21475137)
+          </div>
+        </div>
+        <div class="correctedAnswer" id="question2">
+          <div class="reviewQuestion" id="reviewQuestion2"></div>
+          <div class="reviewAnswer" id="reviewAnswer2"></div>
+          <button
+            class="explanationButton"
+            id="explanationButton2"
+            onclick="switchTextExplanationButton(this)"
+          >
+            Détail
+          </button>
+          <div class="reviewExplanation" id="explanation2">
+            Il n'y a aucune preuve scientifique soutenant l'efficacité des
+            régimes "détox" pour éliminer les toxines. (référence: PMID:
+            25522674)
+          </div>
+        </div>
+        <div class="correctedAnswer" id="question3">
+          <div class="reviewQuestion" id="reviewQuestion3"></div>
+          <div class="reviewAnswer" id="reviewAnswer3"></div>
+          <button
+            class="explanationButton"
+            id="explanationButton3"
+            onclick="switchTextExplanationButton(this)"
+          >
+            Détail
+          </button>
+          <div class="reviewExplanation" id="explanation3">
+            La supplémentation excessive en antioxydants, en particulier les
+            vitamines C et E, peut entraver les adaptations cellulaires et la
+            signalisation liée à l'exercice. (référence: PMID: 24492839)
+          </div>
+        </div>
+        <div class="correctedAnswer" id="question4">
+          <div class="reviewQuestion" id="reviewQuestion4"></div>
+          <div class="reviewAnswer" id="reviewAnswer4"></div>
+          <button
+            class="explanationButton"
+            id="explanationButton4"
+            onclick="switchTextExplanationButton(this)"
+          >
+            Détail
+          </button>
+          <div class="reviewExplanation" id="explanation4">
+            La supplémentation en vitamine C n'a pas montré d'effet significatif
+            dans la prévention du rhume chez la population générale. (référence:
+            PMID: 38082300)
+          </div>
+        </div>
+        <div class="correctedAnswer" id="question5">
+          <div class="reviewQuestion" id="reviewQuestion5"></div>
+          <div class="reviewAnswer" id="reviewAnswer5"></div>
+          <button
+            class="explanationButton"
+            id="explanationButton5"
+            onclick="switchTextExplanationButton(this)"
+          >
+            Détail
+          </button>
+          <div class="reviewExplanation" id="explanation5">
+            Bien que les BCAA soient nécessaires à la synthèse des protéines
+            musculaires, ils ne sont pas suffisants seuls pour la stimuler
+            efficacement sans les autres acides aminés essentiels. (référence:
+            PMID: 28852372)
+          </div>
+        </div>
+        <div class="correctedAnswer" id="question6">
+          <div class="reviewQuestion" id="reviewQuestion6"></div>
+          <div class="reviewAnswer" id="reviewAnswer6"></div>
+          <button
+            class="explanationButton"
+            id="explanationButton6"
+            onclick="switchTextExplanationButton(this)"
+          >
+            Détail
+          </button>
+          <div class="reviewExplanation" id="explanation6">
+            Les acides gras trans augmentent le risque de maladies
+            cardiovasculaires en augmentant les niveaux de cholestérol LDL et en
+            réduisant les niveaux de cholestérol HDL. (référence: PMID:
+            16611951)
+          </div>
+        </div>
+        <div class="correctedAnswer" id="question7">
+          <div class="reviewQuestion" id="reviewQuestion7"></div>
+          <div class="reviewAnswer" id="reviewAnswer7"></div>
+          <button
+            class="explanationButton"
+            id="explanationButton7"
+            onclick="switchTextExplanationButton(this)"
+          >
+            Détail
+          </button>
+          <div class="reviewExplanation" id="explanation7">
+            La caféine est un stimulant qui améliore la vigilance mentale et la
+            performance physique, notamment dans les sports d'endurance.
+            (référence: PMID: 33388079)
+          </div>
+        </div>
+        <div class="correctedAnswer" id="question8">
+          <div class="reviewQuestion" id="reviewQuestion8"></div>
+          <div class="reviewAnswer" id="reviewAnswer8"></div>
+          <button
+            class="explanationButton"
+            id="explanationButton8"
+            onclick="switchTextExplanationButton(this)"
+          >
+            Détail
+          </button>
+          <div class="reviewExplanation" id="explanation8">
+            Les régimes faibles en glucides ne montrent pas de supériorité pour
+            la perte de poids à long terme par rapport aux régimes équilibrés en
+            macronutriments. (référence: PMID: 26278052)
+          </div>
+        </div>
+        <div class="correctedAnswer" id="question9">
+          <div class="reviewQuestion" id="reviewQuestion9"></div>
+          <div class="reviewAnswer" id="reviewAnswer9"></div>
+          <button
+            class="explanationButton"
+            id="explanationButton9"
+            onclick="switchTextExplanationButton(this)"
+          >
+            Détail
+          </button>
+          <div class="reviewExplanation" id="explanation9">
+            Les preuves soutenant l'efficacité des suppléments de collagène sur
+            l'apparence de la peau sont encore limitées et peu concluantes.
+            (référence: PMID: 30681787)
+          </div>
+        </div>
+        <div class="correctedAnswer" id="question10">
+          <div class="reviewQuestion" id="reviewQuestion10"></div>
+          <div class="reviewAnswer" id="reviewAnswer10"></div>
+          <button
+            class="explanationButton"
+            id="explanationButton10"
+            onclick="switchTextExplanationButton(this)"
+          >
+            Détail
+          </button>
+          <div class="reviewExplanation" id="explanation10">
+            La créatine est l'un des suppléments les plus étudiés et efficaces
+            pour augmenter la force et la puissance musculaire. (référence:
+            PMID: 28615996)
+          </div>
+        </div>
+      </div>
+      <section class="cta">
+        <h3 id="cta-headline">Ce que je te propose:</h3>
+        <a id="cta-link" href="#" onclick="linkCTA()"
+          ><button id="cta-button" href="linkCTA(a)"></button
+        ></a>
+      </section>
+      <div class="progression">
+        <div id="progression-bar">
+          <div id="filled-bar"></div>
+        </div>
+        <p id="progression-percentage"></p>
+        <!-- FIND WAY TO DO THE BAR -->
+      </div>
+    </section>
+  </body>
+  <!-- Include the bundle.js file -->
+  <script src="quizMyth.js" defer></script>
+</html>
